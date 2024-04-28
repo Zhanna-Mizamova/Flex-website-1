@@ -1,6 +1,17 @@
+body{
+    padding: 0;
+    margin:0;
+   
+}
+
 nav{
     display: flex;
 }
+
+header{
+    width:100%;
+}
+
 .head{
     display: flex;
     justify-content: center;
@@ -13,7 +24,8 @@ nav{
     
     border: 1px solid black;
     background-color: rgb(180, 180, 121);
-    width: 70%;
+    width: 65%;
+    /* margin:0 auto; */
     justify-content: center;
 }
 
@@ -56,6 +68,7 @@ nav{
     padding: 10px;
     margin-top: 5px;
     text-align: center;
+    width:100%;
 }
 
 .asid{
@@ -63,6 +76,8 @@ nav{
     flex: content;
     background-color: rgb(78, 121, 78);
     text-align: center;
+    width:20%;
+
     
 }
 
@@ -80,4 +95,36 @@ footer{
     background-color: aliceblue;
     padding: 5px;
     
+}
+
+@media only screen and (max-width:520px) {  
+    nav{   
+        flex-direction: column; 
+        margin:0 auto;
+   }
+
+   .main0{
+       
+        width:100%;
+   }
+
+   .asid{
+    width:100%;
+   }
+
+   .sect3{
+    width:100%;
+   }
+
+   footer{
+    display:flex;
+    flex-direction: column;
+   
+   }
+
+   .foot{
+    margin:1px 1px;
+    width:90%;
+   }
+
 }
